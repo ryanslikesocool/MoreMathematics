@@ -32,6 +32,35 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
+		// MARK: - half
+
+		[MethodImpl(AggressiveInlining)]
+		public static half2 unswizzle(in half2 input, in int2 mask) {
+			half2 result = default;
+			for (int i = 0; i < 2; i++) {
+				result[mask[i]] = input[i];
+			}
+			return result;
+		}
+
+		[MethodImpl(AggressiveInlining)]
+		public static half3 unswizzle(in half3 input, in int3 mask) {
+			half3 result = default;
+			for (int i = 0; i < 3; i++) {
+				result[mask[i]] = input[i];
+			}
+			return result;
+		}
+
+		[MethodImpl(AggressiveInlining)]
+		public static half4 unswizzle(in half4 input, in int3 mask) {
+			half4 result = default;
+			for (int i = 0; i < 4; i++) {
+				result[mask[i]] = input[i];
+			}
+			return result;
+		}
+
 		// MARK: - float
 
 		[MethodImpl(AggressiveInlining)]

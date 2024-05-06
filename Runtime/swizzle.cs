@@ -41,6 +41,44 @@ namespace Unity.Mathematics {
 		public static bool4 swizzle(in bool4 input, in int4 mask)
 			=> new bool4(input[mask.x], input[mask.y], input[mask.z], input[mask.w]);
 
+		// MARK: - half
+
+		[MethodImpl(AggressiveInlining)]
+		public static half2 swizzle(in half2 input, in int2 mask)
+			=> new half2(input[mask.x], input[mask.y]);
+
+		[MethodImpl(AggressiveInlining)]
+		public static half3 swizzle(in half2 input, in int3 mask)
+			=> new half3(input[mask.x], input[mask.y], input[mask.z]);
+
+		[MethodImpl(AggressiveInlining)]
+		public static half4 swizzle(in half2 input, in int4 mask)
+			=> new half4(input[mask.x], input[mask.y], input[mask.z], input[mask.w]);
+
+		[MethodImpl(AggressiveInlining)]
+		public static half2 swizzle(in half3 input, in int2 mask)
+			=> new half2(input[mask.x], input[mask.y]);
+
+		[MethodImpl(AggressiveInlining)]
+		public static half3 swizzle(in half3 input, in int3 mask)
+			=> new half3(input[mask.x], input[mask.y], input[mask.z]);
+
+		[MethodImpl(AggressiveInlining)]
+		public static half4 swizzle(in half3 input, in int4 mask)
+			=> new half4(input[mask.x], input[mask.y], input[mask.z], input[mask.w]);
+
+		[MethodImpl(AggressiveInlining)]
+		public static half2 swizzle(in half4 input, in int2 mask)
+			=> new half2(input[mask.x], input[mask.y]);
+
+		[MethodImpl(AggressiveInlining)]
+		public static half3 swizzle(in half4 input, in int3 mask)
+			=> new half3(input[mask.x], input[mask.y], input[mask.z]);
+
+		[MethodImpl(AggressiveInlining)]
+		public static half4 swizzle(in half4 input, in int4 mask)
+			=> new half4(input[mask.x], input[mask.y], input[mask.z], input[mask.w]);
+
 		// MARK: - float
 
 		[MethodImpl(AggressiveInlining)]
