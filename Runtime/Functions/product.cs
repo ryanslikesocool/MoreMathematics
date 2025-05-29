@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+using UnityEngine;
 using static System.Runtime.CompilerServices.MethodImplOptions;
 
 namespace Unity.Mathematics {
@@ -9,21 +10,21 @@ namespace Unity.Mathematics {
 		/// The result of multiplying each lane of the given vector.
 		/// </summary>
 		[MethodImpl(AggressiveInlining)]
-		public static float product(in float2 vector)
+		public static float product(float2 vector)
 			=> vector.x * vector.y;
 
 		/// <summary>
 		/// The result of multiplying each lane of the given vector.
 		/// </summary>
 		[MethodImpl(AggressiveInlining)]
-		public static float product(in float3 vector)
+		public static float product(float3 vector)
 			=> vector.x * vector.y * vector.z;
 
 		/// <summary>
 		/// The result of multiplying each lane of the given vector.
 		/// </summary>
 		[MethodImpl(AggressiveInlining)]
-		public static float product(in float4 vector)
+		public static float product(float4 vector)
 			=> vector.x * vector.y * vector.z * vector.w;
 
 		// MARK: - double
@@ -32,21 +33,21 @@ namespace Unity.Mathematics {
 		/// The result of multiplying each lane of the given vector.
 		/// </summary>
 		[MethodImpl(AggressiveInlining)]
-		public static double product(in double2 vector)
+		public static double product(double2 vector)
 			=> vector.x * vector.y;
 
 		/// <summary>
 		/// The result of multiplying each lane of the given vector.
 		/// </summary>
 		[MethodImpl(AggressiveInlining)]
-		public static double product(in double3 vector)
+		public static double product(double3 vector)
 			=> vector.x * vector.y * vector.z;
 
 		/// <summary>
 		/// The result of multiplying each lane of the given vector.
 		/// </summary>
 		[MethodImpl(AggressiveInlining)]
-		public static double product(in double4 vector)
+		public static double product(double4 vector)
 			=> vector.x * vector.y * vector.z * vector.w;
 
 		// MARK: - int
@@ -55,21 +56,21 @@ namespace Unity.Mathematics {
 		/// The result of multiplying each lane of the given vector.
 		/// </summary>
 		[MethodImpl(AggressiveInlining)]
-		public static int product(in int2 vector)
+		public static int product(int2 vector)
 			=> vector.x * vector.y;
 
 		/// <summary>
 		/// The result of multiplying each lane of the given vector.
 		/// </summary>
 		[MethodImpl(AggressiveInlining)]
-		public static int product(in int3 vector)
+		public static int product(int3 vector)
 			=> vector.x * vector.y * vector.z;
 
 		/// <summary>
 		/// The result of multiplying each lane of the given vector.
 		/// </summary>
 		[MethodImpl(AggressiveInlining)]
-		public static int product(in int4 vector)
+		public static int product(int4 vector)
 			=> vector.x * vector.y * vector.z * vector.w;
 
 		// MARK: - uint
@@ -78,21 +79,65 @@ namespace Unity.Mathematics {
 		/// The result of multiplying each lane of the given vector.
 		/// </summary>
 		[MethodImpl(AggressiveInlining)]
-		public static uint product(in uint2 vector)
+		public static uint product(uint2 vector)
 			=> vector.x * vector.y;
 
 		/// <summary>
 		/// The result of multiplying each lane of the given vector.
 		/// </summary>
 		[MethodImpl(AggressiveInlining)]
-		public static uint product(in uint3 vector)
+		public static uint product(uint3 vector)
 			=> vector.x * vector.y * vector.z;
 
 		/// <summary>
 		/// The result of multiplying each lane of the given vector.
 		/// </summary>
 		[MethodImpl(AggressiveInlining)]
-		public static uint product(in uint4 vector)
+		public static uint product(uint4 vector)
 			=> vector.x * vector.y * vector.z * vector.w;
+
+		// MARK: - Unity Vectors
+
+		/// <summary>
+		/// The result of multiplying each lane of the given vector.
+		/// </summary>
+		[MethodImpl(AggressiveInlining)]
+		public static float product(Vector2 vector)
+			=> vector.x * vector.y;
+
+		/// <summary>
+		/// The result of multiplying each lane of the given vector.
+		/// </summary>
+		[MethodImpl(AggressiveInlining)]
+		public static float product(Vector3 vector)
+			=> vector.x * vector.y * vector.z;
+
+		/// <summary>
+		/// The result of multiplying each lane of the given vector.
+		/// </summary>
+		[MethodImpl(AggressiveInlining)]
+		public static float product(Vector4 vector)
+			=> vector.x * vector.y * vector.z * vector.w;
+
+		/// <summary>
+		/// The result of multiplying each lane of the given vector.
+		/// </summary>
+		[MethodImpl(AggressiveInlining)]
+		public static int product(Vector2Int vector)
+			=> vector.x * vector.y;
+
+		/// <summary>
+		/// The result of multiplying each lane of the given vector.
+		/// </summary>
+		[MethodImpl(AggressiveInlining)]
+		public static int product(Vector3Int vector)
+			=> vector.x * vector.y * vector.z;
+
+		// <summary>
+		// The result of multiplying each lane of the given vector.
+		// </summary>
+		//[MethodImpl(AggressiveInlining)]
+		//public static int product(Vector4Int vector)
+		//	=> vector.x * vector.y * vector.z * vector.w;
 	}
 }

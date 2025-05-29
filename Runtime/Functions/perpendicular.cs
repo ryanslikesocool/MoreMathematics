@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+using UnityEngine;
 using static System.Runtime.CompilerServices.MethodImplOptions;
 
 namespace Unity.Mathematics {
@@ -7,14 +8,30 @@ namespace Unity.Mathematics {
 		/// Get the vector perpendicular to the given vector.
 		/// </summary>
 		[MethodImpl(AggressiveInlining)]
-		public static float2 perpendicular(in float2 v)
-			=> new float2(-v.y, v.x);
+		public static float2 perpendicular(float2 v)
+			=> new(-v.y, v.x);
 
 		/// <summary>
 		/// Get the vector perpendicular to the given vector.
 		/// </summary>
 		[MethodImpl(AggressiveInlining)]
-		public static double2 perpendicular(in double2 v)
-			=> new double2(-v.y, v.x);
+		public static double2 perpendicular(double2 v)
+			=> new(-v.y, v.x);
+
+		// MARK: - Unity Vectors
+
+		/// <summary>
+		/// Get the vector perpendicular to the given vector.
+		/// </summary>
+		[MethodImpl(AggressiveInlining)]
+		public static Vector2 perpendicular(Vector2 v)
+			=> new(-v.y, v.x);
+
+		/// <summary>
+		/// Get the vector perpendicular to the given vector.
+		/// </summary>
+		[MethodImpl(AggressiveInlining)]
+		public static Vector2Int perpendicular(Vector2Int v)
+			=> new(-v.y, v.x);
 	}
 }

@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+using UnityEngine;
 using static System.Runtime.CompilerServices.MethodImplOptions;
 
 namespace Unity.Mathematics {
@@ -233,5 +234,139 @@ namespace Unity.Mathematics {
 			}
 			return x;
 		}
+
+		// MARK: - Unity Vectors
+
+		/// <summary>
+		/// Replaces the given value with its additive inverse.
+		/// </summary>
+		[MethodImpl(AggressiveInlining)]
+		public static Vector2 negate(this ref Vector2 x) {
+			x = -x;
+			return x;
+		}
+
+		/// <summary>
+		/// Replaces the given value with its additive inverse.
+		/// </summary>
+		[MethodImpl(AggressiveInlining)]
+		public static Vector2 negate(this ref Vector2 x, in bool2 mask) {
+			for (int i = 0; i < 2; i++) {
+				if (mask[i]) {
+					x[i] = -x[i];
+				}
+			}
+			return x;
+		}
+
+		/// <summary>
+		/// Replaces the given value with its additive inverse.
+		/// </summary>
+		[MethodImpl(AggressiveInlining)]
+		public static Vector3 negate(this ref Vector3 x) {
+			x = -x;
+			return x;
+		}
+
+		/// <summary>
+		/// Replaces the given value with its additive inverse.
+		/// </summary>
+		[MethodImpl(AggressiveInlining)]
+		public static Vector3 negate(this ref Vector3 x, in bool3 mask) {
+			for (int i = 0; i < 3; i++) {
+				if (mask[i]) {
+					x[i] = -x[i];
+				}
+			}
+			return x;
+		}
+
+		/// <summary>
+		/// Replaces the given value with its additive inverse.
+		/// </summary>
+		[MethodImpl(AggressiveInlining)]
+		public static Vector4 negate(this ref Vector4 x) {
+			x = -x;
+			return x;
+		}
+
+		/// <summary>
+		/// Replaces the given value with its additive inverse.
+		/// </summary>
+		[MethodImpl(AggressiveInlining)]
+		public static Vector4 negate(this ref Vector4 x, in bool4 mask) {
+			for (int i = 0; i < 4; i++) {
+				if (mask[i]) {
+					x[i] = -x[i];
+				}
+			}
+			return x;
+		}
+
+		/// <summary>
+		/// Replaces the given value with its additive inverse.
+		/// </summary>
+		[MethodImpl(AggressiveInlining)]
+		public static Vector2Int negate(this ref Vector2Int x) {
+			x = -x;
+			return x;
+		}
+
+		/// <summary>
+		/// Replaces the given value with its additive inverse.
+		/// </summary>
+		[MethodImpl(AggressiveInlining)]
+		public static Vector2Int negate(this ref Vector2Int x, in bool2 mask) {
+			for (int i = 0; i < 2; i++) {
+				if (mask[i]) {
+					x[i] = -x[i];
+				}
+			}
+			return x;
+		}
+
+		/// <summary>
+		/// Replaces the given value with its additive inverse.
+		/// </summary>
+		[MethodImpl(AggressiveInlining)]
+		public static Vector3Int negate(this ref Vector3Int x) {
+			x = -x;
+			return x;
+		}
+
+		/// <summary>
+		/// Replaces the given value with its additive inverse.
+		/// </summary>
+		[MethodImpl(AggressiveInlining)]
+		public static Vector3Int negate(this ref Vector3Int x, in bool3 mask) {
+			for (int i = 0; i < 3; i++) {
+				if (mask[i]) {
+					x[i] = -x[i];
+				}
+			}
+			return x;
+		}
+
+		// <summary>
+		// Replaces the given value with its additive inverse.
+		// </summary>
+		//[MethodImpl(AggressiveInlining)]
+		//public static Vector4Int negate(this ref Vector4Int x) {
+		//	x = -x;
+		//	return x;
+		//}
+
+		// <summary>
+		// Replaces the given value with its additive inverse.
+		// </summary>
+		//[MethodImpl(AggressiveInlining)]
+		//public static Vector4Int negate(this ref Vector4Int x, in bool4 mask) {
+		//	for (int i = 0; i < 4; i++) {
+		//		if (mask[i]) {
+		//			x[i] = -x[i];
+		//		}
+		//	}
+		//	return x;
+		//}
 	}
 }
