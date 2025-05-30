@@ -481,6 +481,13 @@ namespace Unity.Mathematics {
 
 		// MARK: - Collections
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
+		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns <see langword="null"/>.</returns>
 		public static float? max(IList<float> collection) {
 			switch (collection.Count) {
 				case 0:
@@ -494,6 +501,12 @@ namespace Unity.Mathematics {
 			}
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
 		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns <see cref="float.NegativeInfinity"/>.</returns>
 		public static float max(IEnumerable<float> collection) {
 			float result = float.NegativeInfinity;
@@ -503,6 +516,13 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
+		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns <see langword="null"/>.</returns>
 		public static double? max(IList<double> collection) {
 			switch (collection.Count) {
 				case 0:
@@ -516,6 +536,12 @@ namespace Unity.Mathematics {
 			}
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
 		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns <see cref="double.NegativeInfinity"/>.</returns>
 		public static double max(IEnumerable<double> collection) {
 			double result = double.NegativeInfinity;
@@ -525,6 +551,13 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
+		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns <see langword="null"/>.</returns>
 		public static int? max(IList<int> collection) {
 			switch (collection.Count) {
 				case 0:
@@ -538,6 +571,12 @@ namespace Unity.Mathematics {
 			}
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
 		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns <see cref="int.MinValue"/>.</returns>
 		public static int max(IEnumerable<int> collection) {
 			int result = int.MinValue;
@@ -547,6 +586,13 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
+		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns <see langword="null"/>.</returns>
 		public static uint? max(IList<uint> collection) {
 			switch (collection.Count) {
 				case 0:
@@ -560,6 +606,12 @@ namespace Unity.Mathematics {
 			}
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
 		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns <see cref="uint.MinValue"/>.</returns>
 		public static uint max(IEnumerable<uint> collection) {
 			uint result = uint.MinValue;
@@ -571,6 +623,13 @@ namespace Unity.Mathematics {
 
 		// MARK: - Vector Collections
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
+		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns <see langword="null"/>.</returns>
 		public static float2? max(IList<float2> collection) {
 			switch (collection.Count) {
 				case 0:
@@ -584,6 +643,12 @@ namespace Unity.Mathematics {
 			}
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
 		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns a vector with each lane set to <see cref="float.NegativeInfinity"/>.</returns>
 		public static float2 max(IEnumerable<float2> collection) {
 			float2 result = float.NegativeInfinity;
@@ -593,6 +658,13 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
+		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns <see langword="null"/>.</returns>
 		public static float3? max(IList<float3> collection) {
 			switch (collection.Count) {
 				case 0:
@@ -606,6 +678,12 @@ namespace Unity.Mathematics {
 			}
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
 		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns a vector with each lane set to <see cref="float.NegativeInfinity"/>.</returns>
 		public static float3 max(IEnumerable<float3> collection) {
 			float3 result = float.NegativeInfinity;
@@ -615,6 +693,13 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
+		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns <see langword="null"/>.</returns>
 		public static float4? max(IList<float4> collection) {
 			switch (collection.Count) {
 				case 0:
@@ -628,6 +713,12 @@ namespace Unity.Mathematics {
 			}
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
 		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns a vector with each lane set to <see cref="float.NegativeInfinity"/>.</returns>
 		public static float4 max(IEnumerable<float4> collection) {
 			float4 result = float.NegativeInfinity;
@@ -637,6 +728,13 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
+		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns <see langword="null"/>.</returns>
 		public static double2? max(IList<double2> collection) {
 			switch (collection.Count) {
 				case 0:
@@ -650,6 +748,12 @@ namespace Unity.Mathematics {
 			}
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
 		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns a vector with each lane set to <see cref="double.NegativeInfinity"/>.</returns>
 		public static double2 max(IEnumerable<double2> collection) {
 			double2 result = double.NegativeInfinity;
@@ -659,6 +763,13 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
+		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns <see langword="null"/>.</returns>
 		public static double3? max(IList<double3> collection) {
 			switch (collection.Count) {
 				case 0:
@@ -672,6 +783,12 @@ namespace Unity.Mathematics {
 			}
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
 		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns a vector with each lane set to <see cref="double.NegativeInfinity"/>.</returns>
 		public static double3 max(IEnumerable<double3> collection) {
 			double3 result = double.NegativeInfinity;
@@ -681,6 +798,13 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
+		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns <see langword="null"/>.</returns>
 		public static double4? max(IList<double4> collection) {
 			switch (collection.Count) {
 				case 0:
@@ -694,6 +818,12 @@ namespace Unity.Mathematics {
 			}
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
 		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns a vector with each lane set to <see cref="double.NegativeInfinity"/>.</returns>
 		public static double4 max(IEnumerable<double4> collection) {
 			double4 result = double.NegativeInfinity;
@@ -703,6 +833,13 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
+		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns <see langword="null"/>.</returns>
 		public static int2? max(IList<int2> collection) {
 			switch (collection.Count) {
 				case 0:
@@ -716,6 +853,12 @@ namespace Unity.Mathematics {
 			}
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
 		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns a vector with each lane set to <see cref="int.MinValue"/>.</returns>
 		public static int2 max(IEnumerable<int2> collection) {
 			int2 result = int.MinValue;
@@ -725,6 +868,13 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
+		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns <see langword="null"/>.</returns>
 		public static int3? max(IList<int3> collection) {
 			switch (collection.Count) {
 				case 0:
@@ -738,6 +888,12 @@ namespace Unity.Mathematics {
 			}
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
 		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns a vector with each lane set to <see cref="int.MinValue"/>.</returns>
 		public static int3 max(IEnumerable<int3> collection) {
 			int3 result = int.MinValue;
@@ -747,6 +903,13 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
+		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns <see langword="null"/>.</returns>
 		public static int4? max(IList<int4> collection) {
 			switch (collection.Count) {
 				case 0:
@@ -760,6 +923,12 @@ namespace Unity.Mathematics {
 			}
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
 		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns a vector with each lane set to <see cref="int.MinValue"/>.</returns>
 		public static int4 max(IEnumerable<int4> collection) {
 			int4 result = int.MinValue;
@@ -769,6 +938,13 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
+		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns <see langword="null"/>.</returns>
 		public static uint2? max(IList<uint2> collection) {
 			switch (collection.Count) {
 				case 0:
@@ -782,6 +958,12 @@ namespace Unity.Mathematics {
 			}
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
 		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns a vector with each lane set to <see cref="uint.MinValue"/>.</returns>
 		public static uint2 max(IEnumerable<uint2> collection) {
 			uint2 result = uint.MinValue;
@@ -791,6 +973,13 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
+		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns <see langword="null"/>.</returns>
 		public static uint3? max(IList<uint3> collection) {
 			switch (collection.Count) {
 				case 0:
@@ -804,6 +993,12 @@ namespace Unity.Mathematics {
 			}
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
 		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns a vector with each lane set to <see cref="uint.MinValue"/>.</returns>
 		public static uint3 max(IEnumerable<uint3> collection) {
 			uint3 result = uint.MinValue;
@@ -813,6 +1008,13 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
+		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns <see langword="null"/>.</returns>
 		public static uint4? max(IList<uint4> collection) {
 			switch (collection.Count) {
 				case 0:
@@ -826,6 +1028,12 @@ namespace Unity.Mathematics {
 			}
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
 		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns a vector with each lane set to <see cref="uint.MinValue"/>.</returns>
 		public static uint4 max(IEnumerable<uint4> collection) {
 			uint4 result = uint.MinValue;
@@ -837,6 +1045,13 @@ namespace Unity.Mathematics {
 
 		// MARK: - Unity Vector Collections
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
+		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns <see langword="null"/>.</returns>
 		public static Vector2? max(IList<Vector2> collection) {
 			switch (collection.Count) {
 				case 0:
@@ -850,6 +1065,12 @@ namespace Unity.Mathematics {
 			}
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
 		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns a vector with each lane set to <see cref="float.NegativeInfinity"/>.</returns>
 		public static Vector2 max(IEnumerable<Vector2> collection) {
 			Vector2 result = new(float.NegativeInfinity, float.NegativeInfinity);
@@ -859,6 +1080,13 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
+		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns <see langword="null"/>.</returns>
 		public static Vector3? max(IList<Vector3> collection) {
 			switch (collection.Count) {
 				case 0:
@@ -872,6 +1100,12 @@ namespace Unity.Mathematics {
 			}
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
 		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns a vector with each lane set to <see cref="float.NegativeInfinity"/>.</returns>
 		public static Vector3 max(IEnumerable<Vector3> collection) {
 			Vector3 result = new(float.NegativeInfinity, float.NegativeInfinity, float.NegativeInfinity);
@@ -881,6 +1115,13 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
+		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns <see langword="null"/>.</returns>
 		public static Vector4? max(IList<Vector4> collection) {
 			switch (collection.Count) {
 				case 0:
@@ -894,6 +1135,12 @@ namespace Unity.Mathematics {
 			}
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
 		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns a vector with each lane set to <see cref="float.NegativeInfinity"/>.</returns>
 		public static Vector4 max(IEnumerable<Vector4> collection) {
 			Vector4 result = new(float.NegativeInfinity, float.NegativeInfinity, float.NegativeInfinity, float.NegativeInfinity);
@@ -903,6 +1150,13 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
+		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns <see langword="null"/>.</returns>
 		public static Vector2Int? max(IList<Vector2Int> collection) {
 			switch (collection.Count) {
 				case 0:
@@ -916,6 +1170,12 @@ namespace Unity.Mathematics {
 			}
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
 		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns a vector with each lane set to <see cref="int.MinValue"/>.</returns>
 		public static Vector2Int max(IEnumerable<Vector2Int> collection) {
 			Vector2Int result = new(int.MinValue, int.MinValue);
@@ -925,6 +1185,13 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
+		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns <see langword="null"/>.</returns>
 		public static Vector3Int? max(IList<Vector3Int> collection) {
 			switch (collection.Count) {
 				case 0:
@@ -938,6 +1205,12 @@ namespace Unity.Mathematics {
 			}
 		}
 
+		/// <summary>
+		/// 	<para>
+		/// 	Complexity: O(n)
+		/// 	</para>
+		/// </summary>
+		/// <param name="collection"></param>
 		/// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns a vector with each lane set to <see cref="int.MinValue"/>.</returns>
 		public static Vector3Int max(IEnumerable<Vector3Int> collection) {
 			Vector3Int result = new(int.MinValue, int.MinValue, int.MinValue);
@@ -947,6 +1220,13 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
+		// <summary>
+		// 	<para>
+		// 	Complexity: O(n)
+		// 	</para>
+		// </summary>
+		// <param name="collection"></param>
+		// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns <see langword="null"/>.</returns>
 		//public static Vector4Int? max(IList<Vector4Int> collection) {
 		//	switch (collection.Count) {
 		//		case 0:
@@ -960,6 +1240,12 @@ namespace Unity.Mathematics {
 		//	}
 		//}
 
+		// <summary>
+		// 	<para>
+		// 	Complexity: O(n)
+		// 	</para>
+		// </summary>
+		// <param name="collection"></param>
 		// <returns>The maximum of the input values.  If the given <see paramref="collection"/> is empty, returns a vector with each lane set to <see cref="int.MinValue"/>.</returns>
 		//public static Vector4Int max(IEnumerable<Vector4Int> collection) {
 		//	Vector4Int result = new(int.MinValue, int.MinValue, int.MinValue, int.MinValue);
