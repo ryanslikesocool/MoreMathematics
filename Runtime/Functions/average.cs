@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+using UnityEngine;
 using static System.Runtime.CompilerServices.MethodImplOptions;
 
 namespace Unity.Mathematics {
@@ -9,21 +10,21 @@ namespace Unity.Mathematics {
 		/// The sum of all lanes in the given vector divided by the number of lanes.
 		/// </summary>
 		[MethodImpl(AggressiveInlining)]
-		public static float average(in float2 value)
+		public static float average(float2 value)
 			=> sum(value) * 0.5f;
 
 		/// <summary>
 		/// The sum of all lanes in the given vector divided by the number of lanes.
 		/// </summary>
 		[MethodImpl(AggressiveInlining)]
-		public static float average(in float3 value)
+		public static float average(float3 value)
 			=> sum(value) * 0.3333333333f;
 
 		/// <summary>
 		/// The sum of all lanes in the given vector divided by the number of lanes.
 		/// </summary>
 		[MethodImpl(AggressiveInlining)]
-		public static float average(in float4 value)
+		public static float average(float4 value)
 			=> sum(value) * 0.25f;
 
 		// MARK: - double
@@ -32,21 +33,44 @@ namespace Unity.Mathematics {
 		/// The sum of all lanes in the given vector divided by the number of lanes.
 		/// </summary>
 		[MethodImpl(AggressiveInlining)]
-		public static double average(in double2 value)
+		public static double average(double2 value)
 			=> sum(value) * 0.5f;
 
 		/// <summary>
 		/// The sum of all lanes in the given vector divided by the number of lanes.
 		/// </summary>
 		[MethodImpl(AggressiveInlining)]
-		public static double average(in double3 value)
+		public static double average(double3 value)
 			=> sum(value) * 0.3333333333f;
 
 		/// <summary>
 		/// The sum of all lanes in the given vector divided by the number of lanes.
 		/// </summary>
 		[MethodImpl(AggressiveInlining)]
-		public static double average(in double4 value)
+		public static double average(double4 value)
+			=> sum(value) * 0.25f;
+
+		// MARK: - Unity Vector
+
+		/// <summary>
+		/// The sum of all lanes in the given vector divided by the number of lanes.
+		/// </summary>
+		[MethodImpl(AggressiveInlining)]
+		public static float average(Vector2 value)
+			=> sum(value) * 0.5f;
+
+		/// <summary>
+		/// The sum of all lanes in the given vector divided by the number of lanes.
+		/// </summary>
+		[MethodImpl(AggressiveInlining)]
+		public static float average(Vector3 value)
+			=> sum(value) * 0.3333333333f;
+
+		/// <summary>
+		/// The sum of all lanes in the given vector divided by the number of lanes.
+		/// </summary>
+		[MethodImpl(AggressiveInlining)]
+		public static float average(Vector4 value)
 			=> sum(value) * 0.25f;
 	}
 }

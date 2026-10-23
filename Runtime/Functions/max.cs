@@ -5,7 +5,7 @@ using static System.Runtime.CompilerServices.MethodImplOptions;
 
 namespace Unity.Mathematics {
 	public static partial class math {
-		/// <summary>Returns the maximum of two half values.</summary>
+		/// <summary>Returns the maximum of two <see cref="Unity.Mathematics.half"/> values.</summary>
 		/// <param name="x">The first input value.</param>
 		/// <param name="y">The second input value.</param>
 		/// <returns>The maximum of the two input values.</returns>
@@ -13,7 +13,7 @@ namespace Unity.Mathematics {
 		public static half max(half x, half y)
 			=> isnan(y) || x > y ? x : y;
 
-		/// <summary>Returns the maximum of multiple half values.</summary>
+		/// <summary>Returns the maximum of multiple <see cref="Unity.Mathematics.half"/> values.</summary>
 		/// <param name="a">The first input value.</param>
 		/// <param name="b">The second input value.</param>
 		/// <param name="c">The third input value.</param>
@@ -28,7 +28,7 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
-		/// <summary>Returns the maximum of multiple float values.</summary>
+		/// <summary>Returns the maximum of multiple <see cref="float"/> values.</summary>
 		/// <param name="a">The first input value.</param>
 		/// <param name="b">The second input value.</param>
 		/// <param name="c">The third input value.</param>
@@ -43,7 +43,7 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
-		/// <summary>Returns the maximum of multiple double values.</summary>
+		/// <summary>Returns the maximum of multiple <see cref="double"/> values.</summary>
 		/// <param name="a">The first input value.</param>
 		/// <param name="b">The second input value.</param>
 		/// <param name="c">The third input value.</param>
@@ -58,7 +58,7 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
-		/// <summary>Returns the maximum of multiple int values.</summary>
+		/// <summary>Returns the maximum of multiple <see cref="int"/> values.</summary>
 		/// <param name="a">The first input value.</param>
 		/// <param name="b">The second input value.</param>
 		/// <param name="c">The third input value.</param>
@@ -73,7 +73,7 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
-		/// <summary>Returns the maximum of multiple uint values.</summary>
+		/// <summary>Returns the maximum of multiple <see cref="uint"/> values.</summary>
 		/// <param name="a">The first input value.</param>
 		/// <param name="b">The second input value.</param>
 		/// <param name="c">The third input value.</param>
@@ -90,7 +90,7 @@ namespace Unity.Mathematics {
 
 		// MARK: - Unity Vectors
 
-		/// <summary>Returns the componentwise maximum of two Vector2 vectors.</summary>
+		/// <summary>Returns the componentwise maximum of two <see cref="Vector2"/> vectors.</summary>
 		/// <param name="x">The first input value.</param>
 		/// <param name="y">The second input value.</param>
 		/// <returns>The componentwise maximum of the two input values.</returns>
@@ -98,7 +98,7 @@ namespace Unity.Mathematics {
 		public static Vector2 max(Vector2 x, Vector2 y)
 			=> new(max(x.x, y.x), max(x.y, y.y));
 
-		/// <summary>Returns the componentwise maximum of two Vector3 vectors.</summary>
+		/// <summary>Returns the componentwise maximum of two <see cref="Vector3"/> vectors.</summary>
 		/// <param name="x">The first input value.</param>
 		/// <param name="y">The second input value.</param>
 		/// <returns>The componentwise maximum of the two input values.</returns>
@@ -106,7 +106,7 @@ namespace Unity.Mathematics {
 		public static Vector3 max(Vector3 x, Vector3 y)
 			=> new(max(x.x, y.x), max(x.y, y.y), max(x.z, y.z));
 
-		/// <summary>Returns the componentwise maximum of two Vector4 vectors.</summary>
+		/// <summary>Returns the componentwise maximum of two <see cref="Vector4"/> vectors.</summary>
 		/// <param name="x">The first input value.</param>
 		/// <param name="y">The second input value.</param>
 		/// <returns>The componentwise maximum of the two input values.</returns>
@@ -114,7 +114,7 @@ namespace Unity.Mathematics {
 		public static Vector4 max(Vector4 x, Vector4 y)
 			=> new(max(x.x, y.x), max(x.y, y.y), max(x.z, y.z), max(x.w, y.w));
 
-		/// <summary>Returns the componentwise maximum of two Vector2Int vectors.</summary>
+		/// <summary>Returns the componentwise maximum of two <see cref="Vector2Int"/> vectors.</summary>
 		/// <param name="x">The first input value.</param>
 		/// <param name="y">The second input value.</param>
 		/// <returns>The componentwise maximum of the two input values.</returns>
@@ -122,7 +122,7 @@ namespace Unity.Mathematics {
 		public static Vector2Int max(Vector2Int x, Vector2Int y)
 			=> new(max(x.x, y.x), max(x.y, y.y));
 
-		/// <summary>Returns the componentwise maximum of two Vector3Int vectors.</summary>
+		/// <summary>Returns the componentwise maximum of two <see cref="Vector3Int"/> vectors.</summary>
 		/// <param name="x">The first input value.</param>
 		/// <param name="y">The second input value.</param>
 		/// <returns>The componentwise maximum of the two input values.</returns>
@@ -130,7 +130,7 @@ namespace Unity.Mathematics {
 		public static Vector3Int max(Vector3Int x, Vector3Int y)
 			=> new(max(x.x, y.x), max(x.y, y.y), max(x.z, y.z));
 
-		// <summary>Returns the componentwise maximum of two Vector4Int vectors.</summary>
+		// <summary>Returns the componentwise maximum of two <see cref="Vector4Int"/> vectors.</summary>
 		// <param name="x">The first input value.</param>
 		// <param name="y">The second input value.</param>
 		// <returns>The componentwise maximum of the two input values.</returns>
@@ -138,7 +138,7 @@ namespace Unity.Mathematics {
 		//public static Vector4Int max(Vector4Int x, Vector4Int y)
 		//	=> new(max(x.x, y.x), max(x.y, y.y), max(x.z, y.z), max(x.w, y.w));
 
-		/// <summary>Returns the componentwise maximum of multiple Vector2 vectors.</summary>
+		/// <summary>Returns the componentwise maximum of multiple <see cref="Vector2"/> vectors.</summary>
 		/// <param name="a">The first input value.</param>
 		/// <param name="b">The second input value.</param>
 		/// <param name="c">The third input value.</param>
@@ -153,7 +153,7 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
-		/// <summary>Returns the componentwise maximum of multiple Vector3 vectors.</summary>
+		/// <summary>Returns the componentwise maximum of multiple <see cref="Vector3"/> vectors.</summary>
 		/// <param name="a">The first input value.</param>
 		/// <param name="b">The second input value.</param>
 		/// <param name="c">The third input value.</param>
@@ -168,7 +168,7 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
-		/// <summary>Returns the componentwise maximum of multiple Vector4 vectors.</summary>
+		/// <summary>Returns the componentwise maximum of multiple <see cref="Vector4"/> vectors.</summary>
 		/// <param name="a">The first input value.</param>
 		/// <param name="b">The second input value.</param>
 		/// <param name="c">The third input value.</param>
@@ -183,7 +183,7 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
-		/// <summary>Returns the componentwise maximum of multiple Vector2Int vectors.</summary>
+		/// <summary>Returns the componentwise maximum of multiple <see cref="Vector2Int"/> vectors.</summary>
 		/// <param name="a">The first input value.</param>
 		/// <param name="b">The second input value.</param>
 		/// <param name="c">The third input value.</param>
@@ -198,7 +198,7 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
-		/// <summary>Returns the componentwise maximum of multiple Vector3Int vectors.</summary>
+		/// <summary>Returns the componentwise maximum of multiple <see cref="Vector3Int"/> vectors.</summary>
 		/// <param name="a">The first input value.</param>
 		/// <param name="b">The second input value.</param>
 		/// <param name="c">The third input value.</param>
@@ -213,7 +213,7 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
-		// <summary>Returns the componentwise maximum of multiple Vector4Int vectors.</summary>
+		// <summary>Returns the componentwise maximum of multiple <see cref="Vector4Int"/> vectors.</summary>
 		// <param name="a">The first input value.</param>
 		// <param name="b">The second input value.</param>
 		// <param name="c">The third input value.</param>
@@ -230,7 +230,7 @@ namespace Unity.Mathematics {
 
 		// MARK: - Vectors
 
-		/// <summary>Returns the componentwise maximum of two half2 vectors.</summary>
+		/// <summary>Returns the componentwise maximum of two <see cref="Unity.Mathematics.half2"/> vectors.</summary>
 		/// <param name="x">The first input value.</param>
 		/// <param name="y">The second input value.</param>
 		/// <returns>The componentwise maximum of the two input values.</returns>
@@ -238,7 +238,7 @@ namespace Unity.Mathematics {
 		public static half2 max(half2 x, half2 y)
 			=> new(max(x.x, y.x), max(x.y, y.y));
 
-		/// <summary>Returns the componentwise maximum of two half3 vectors.</summary>
+		/// <summary>Returns the componentwise maximum of two <see cref="Unity.Mathematics.half3"/> vectors.</summary>
 		/// <param name="x">The first input value.</param>
 		/// <param name="y">The second input value.</param>
 		/// <returns>The componentwise maximum of the two input values.</returns>
@@ -246,7 +246,7 @@ namespace Unity.Mathematics {
 		public static half3 max(half3 x, half3 y)
 			=> new(max(x.x, y.x), max(x.y, y.y), max(x.z, y.z));
 
-		/// <summary>Returns the componentwise maximum of two half4 vectors.</summary>
+		/// <summary>Returns the componentwise maximum of two <see cref="Unity.Mathematics.half4"/> vectors.</summary>
 		/// <param name="x">The first input value.</param>
 		/// <param name="y">The second input value.</param>
 		/// <returns>The componentwise maximum of the two input values.</returns>
@@ -254,7 +254,7 @@ namespace Unity.Mathematics {
 		public static half4 max(half4 x, half4 y)
 			=> new(max(x.x, y.x), max(x.y, y.y), max(x.z, y.z), max(x.w, y.w));
 
-		/// <summary>Returns the componentwise maximum of multiple half2 vectors.</summary>
+		/// <summary>Returns the componentwise maximum of multiple <see cref="Unity.Mathematics.half2"/> vectors.</summary>
 		/// <param name="a">The first input value.</param>
 		/// <param name="b">The second input value.</param>
 		/// <param name="c">The third input value.</param>
@@ -269,7 +269,7 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
-		/// <summary>Returns the componentwise maximum of multiple half3 vectors.</summary>
+		/// <summary>Returns the componentwise maximum of multiple <see cref="Unity.Mathematics.half3"/> vectors.</summary>
 		/// <param name="a">The first input value.</param>
 		/// <param name="b">The second input value.</param>
 		/// <param name="c">The third input value.</param>
@@ -284,7 +284,7 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
-		/// <summary>Returns the componentwise maximum of multiple half4 vectors.</summary>
+		/// <summary>Returns the componentwise maximum of multiple <see cref="Unity.Mathematics.half4"/> vectors.</summary>
 		/// <param name="a">The first input value.</param>
 		/// <param name="b">The second input value.</param>
 		/// <param name="c">The third input value.</param>
@@ -299,7 +299,7 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
-		/// <summary>Returns the componentwise maximum of multiple float2 vectors.</summary>
+		/// <summary>Returns the componentwise maximum of multiple <see cref="Unity.Mathematics.float2"/> vectors.</summary>
 		/// <param name="a">The first input value.</param>
 		/// <param name="b">The second input value.</param>
 		/// <param name="c">The third input value.</param>
@@ -314,7 +314,7 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
-		/// <summary>Returns the componentwise maximum of multiple float3 vectors.</summary>
+		/// <summary>Returns the componentwise maximum of multiple <see cref="Unity.Mathematics.float3"/> vectors.</summary>
 		/// <param name="a">The first input value.</param>
 		/// <param name="b">The second input value.</param>
 		/// <param name="c">The third input value.</param>
@@ -329,7 +329,7 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
-		/// <summary>Returns the componentwise maximum of multiple float4 vectors.</summary>
+		/// <summary>Returns the componentwise maximum of multiple <see cref="Unity.Mathematics.float4"/> vectors.</summary>
 		/// <param name="a">The first input value.</param>
 		/// <param name="b">The second input value.</param>
 		/// <param name="c">The third input value.</param>
@@ -344,7 +344,7 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
-		/// <summary>Returns the componentwise maximum of multiple double2 vectors.</summary>
+		/// <summary>Returns the componentwise maximum of multiple <see cref="Unity.Mathematics.double2"/> vectors.</summary>
 		/// <param name="a">The first input value.</param>
 		/// <param name="b">The second input value.</param>
 		/// <param name="c">The third input value.</param>
@@ -359,7 +359,7 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
-		/// <summary>Returns the componentwise maximum of multiple double3 vectors.</summary>
+		/// <summary>Returns the componentwise maximum of multiple <see cref="Unity.Mathematics.double3"/> vectors.</summary>
 		/// <param name="a">The first input value.</param>
 		/// <param name="b">The second input value.</param>
 		/// <param name="c">The third input value.</param>
@@ -374,7 +374,7 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
-		/// <summary>Returns the componentwise maximum of multiple double4 vectors.</summary>
+		/// <summary>Returns the componentwise maximum of multiple <see cref="Unity.Mathematics.double4"/> vectors.</summary>
 		/// <param name="a">The first input value.</param>
 		/// <param name="b">The second input value.</param>
 		/// <param name="c">The third input value.</param>
@@ -389,7 +389,7 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
-		/// <summary>Returns the componentwise maximum of multiple int2 vectors.</summary>
+		/// <summary>Returns the componentwise maximum of multiple <see cref="Unity.Mathematics.int2"/> vectors.</summary>
 		/// <param name="a">The first input value.</param>
 		/// <param name="b">The second input value.</param>
 		/// <param name="c">The third input value.</param>
@@ -404,7 +404,7 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
-		/// <summary>Returns the componentwise maximum of multiple int3 vectors.</summary>
+		/// <summary>Returns the componentwise maximum of multiple <see cref="Unity.Mathematics.int3"/> vectors.</summary>
 		/// <param name="a">The first input value.</param>
 		/// <param name="b">The second input value.</param>
 		/// <param name="c">The third input value.</param>
@@ -419,7 +419,7 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
-		/// <summary>Returns the componentwise maximum of multiple int4 vectors.</summary>
+		/// <summary>Returns the componentwise maximum of multiple <see cref="Unity.Mathematics.int4"/> vectors.</summary>
 		/// <param name="a">The first input value.</param>
 		/// <param name="b">The second input value.</param>
 		/// <param name="c">The third input value.</param>
@@ -434,7 +434,7 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
-		/// <summary>Returns the componentwise maximum of multiple uint2 vectors.</summary>
+		/// <summary>Returns the componentwise maximum of multiple <see cref="Unity.Mathematics.uint2"/> vectors.</summary>
 		/// <param name="a">The first input value.</param>
 		/// <param name="b">The second input value.</param>
 		/// <param name="c">The third input value.</param>
@@ -449,7 +449,7 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
-		/// <summary>Returns the componentwise maximum of multiple uint3 vectors.</summary>
+		/// <summary>Returns the componentwise maximum of multiple <see cref="Unity.Mathematics.uint3"/> vectors.</summary>
 		/// <param name="a">The first input value.</param>
 		/// <param name="b">The second input value.</param>
 		/// <param name="c">The third input value.</param>
@@ -464,7 +464,7 @@ namespace Unity.Mathematics {
 			return result;
 		}
 
-		/// <summary>Returns the componentwise maximum of multiple uint4 vectors.</summary>
+		/// <summary>Returns the componentwise maximum of multiple <see cref="Unity.Mathematics.uint4"/> vectors.</summary>
 		/// <param name="a">The first input value.</param>
 		/// <param name="b">The second input value.</param>
 		/// <param name="c">The third input value.</param>
